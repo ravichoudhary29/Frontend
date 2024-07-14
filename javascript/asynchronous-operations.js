@@ -16,3 +16,13 @@ fetchData((data) => {
 
 // 2. Promise
 
+const newPromise = new Promise((resolve, reject) => {
+  if (true) {
+    resolve("Promise was fulfilled");
+  } else {
+    reject("Promise was rejected.");
+  }
+});
+
+
+// 3. async and await
