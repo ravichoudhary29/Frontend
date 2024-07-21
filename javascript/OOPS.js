@@ -80,6 +80,7 @@
 // console.log(duck.constructor);
 // console.log(duck);
 
-// adding whole object as prototype
+// adding whole object as prototype 
+//Ravi
 
 // console.log(Bird.prototype.isPrototypeOf(duck));

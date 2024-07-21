@@ -1,7 +1,7 @@
 // Pollyfill
 // map
 
-const myArr = [1, 2, 3, 4];
+const myArr = [1, 2, 3, 4, 6, 7];
 // arr.map((element, index, arr) => {});
 
 Array.prototype.myMyfilter = function (cb) {
@@ -16,6 +16,6 @@ Array.prototype.myMyfilter = function (cb) {
 };
 console.log(
   myArr.myMyfilter((num) => {
-    return num < 3;
+    return num < 5;
   })
 );

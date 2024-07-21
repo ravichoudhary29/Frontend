@@ -15,6 +15,7 @@ fetchData((data) => {
 });
 
 // 2. Promise
+// Ravi
 
 const newPromise = new Promise((resolve, reject) => {
   if (true) {
