@@ -1,25 +1,21 @@
-function whatIsInAName(collection, source) {
-  let newCollection = [];
-  for (let i = 0; i < collection.length; i++) {
-    let keys = Object.keys(collection[i]);
-    let values = Object.values(collection[i]);
-    for (let j = 0; j < keys.length; j++) {
-      if (
-        Object.keys(source).includes(keys[j]) &&
-        Object.values(source).includes(values[j])
-      ) {
-        newCollection.push(collection[i]);
-      }
+// Pollyfill
+// map
+
+const myArr = [1, 2, 3, 4];
+// arr.map((element, index, arr) => {});
+
+Array.prototype.myMyfilter = function (cb) {
+  let result = [];
+  for (let i = 0; i < this.length; i++) {
+    if (cb(this[i])) {
+      result.push(this[i]);
     }
   }
-  return newCollection;
-}
 
-whatIsInAName(
-  [
-    { first: "Romeo", last: "Montague" },
-    { first: "Mercutio", last: null },
-    { first: "Tybalt", last: "Capulet" },
-  ],
-  { last: "Capulet" }
+  return result;
+};
+console.log(
+  myArr.myMyfilter((num) => {
+    return num < 3;
+  })
 );
