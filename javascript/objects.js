@@ -2,7 +2,7 @@
 const person = {
   name: "Ravi",
   age: 30,
-  address: "Bengaluru",
+  address: "Bengaluruu",
 };
 
 // console.log(person.hasOwnProperty("address"));
